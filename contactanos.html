@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Jostin Emilio Viter Tejada">
+	<title>Consultorio Medico</title>
+    <link rel="stylesheet" href="assets/estilos/styles.css">
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <style>
+
+		/* Selector Universal  */
+		*{
+			font-family: 'Times New Roman', Times, serif;
+		}
+
+	
+		/* Selector de Elementos */
+		h1{
+			font-size: 40px;
+		}
+
+
+		/* Selector de Clases especifica*/
+		p.descripcion{
+			color: #3e4247;
+			justify-content: center;
+			/* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+		}
+
+		/* Selector de Id*/
+        #DivIframe iframe{
+            position: relative;    
+            width: 100%;
+            height: 450px; 
+            border: 0;     
+        }
+
+		/* Selector de Agrupacion*/
+		h2, h3{
+		color: #295e97
+		}
+		
+
+		/* Selector de Combinador*/
+		div p{
+			max-width: 100%;
+		}
+	/* Selector de Combinador*/
+		h3 ~ p {
+			color: brown;
+		}
+		.cont_1 {
+		padding-left: 90px;
+		margin-bottom: -80px;
+		}
+
+		/* Selector pseudoclases*/
+		a:hover {
+            
+            color: #d81b1b;
+        }
+
+
+		/* Selector pseudo-elementos*/
+		p::first-letter{
+			color: rgb(0, 0, 0);
+		}
+
+		.cont_1 h2{
+			font-size: 50px;
+		}
+
+
+		.cont_1 p{
+			font-size: 20px;
+			margin-top: -25px;
+			padding-left: 25px;
+		}
+		.section1 {
+			background-color: #F5F5DC;
+			
+		}
+		.container {
+			max-width: 400px;
+			margin: 100px auto;
+			padding: 40px;
+			background-color: #f7f7f7;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			display: inline-block;
+			margin-left: 200px;
+		}
+
+		.container {
+			max-width: 400px;
+			margin: 100px auto;
+			padding: 40px;
+			background-color: #f7f7f7;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			display: inline-block;
+			margin-left: 200px;
+		}
+
+		.container {
+			max-width: 400px;
+			margin: 100px auto;
+			padding: 40px;
+			background-color: #f7f7f7;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 10px;
+			display: inline-block;
+			margin-left: 200px;
+		}
+
+
+		.container h1 {
+			margin-top: -10px;
+			text-align: center; 
+		}
+
+		.container label {
+			display: block;
+			margin: 10px 0;
+		}
+
+		/* Selector por atributo*/
+		input[type="text"], input[type="email"], textarea {
+			width: 90%; 
+			padding: 10px;
+			margin: 5px 0;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+		/* Selector por atributo*/
+		input[type="submit"] {
+			background-color: #007BFF;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin: 0 auto; 
+			display: block; 
+		}
+		/* Selector por atributo*/
+		input[type="submit"]:hover {
+			background-color: #0056b3;
+		}
+
+
+		.image-section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			background-color: #f7f7f7;
+			padding: 20px;
+		}
+
+		.image-container {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			white-space: nowrap;
+		}
+
+		.image-container a {
+			margin-right: 400px;
+		}
+
+		.image-container img {
+			max-width: 100px; 
+			height: auto;
+		}
+
+    </style>
+
+</head>
+<body>
+	<header class="titulo_pagina">
+		<h1>Consultorio Medico - Grupo 6</h1>
+	</header>
+	<nav class="menu">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="pacientes.html">Pacientes</a></li>
+			<li><a href="especialistas.html">Especialistas</a></li>
+			<li><a href="consultas.html">Consultas</a></li>
+			<li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+			<li><a href="contactanos.html">Contactanos</a></li>
+		</ul>
+	</nav>	
+
+	<main >
+
+        <section class="section1">
+            <div class="cont_1">
+                <h2>Contactanos</h2>
+                
+            </div>
+
+			<div class="container">
+
+				<div>
+					<!--Estilo en linea --> 
+				<h2 style="color: #0056b3;">Contactanos</h2>
+				<form action="#" method="post">
+					<label for="nombre">Nombre:</label>
+					<input type="text" id="nombre" name="nombre" required>
+		
+					<label for="email">Correo Electrónico:</label>
+					<input type="email" id="email" name="email" required>
+		
+					<label for="mensaje">Mensaje:</label>
+					<textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+					<input type="submit" value="Enviar">
+				</form>			
+				</div>
+					
+			</div>
+			
+			<div class="container">
+				<div>
+					<h2 style="text-align: center; margin-top: -30px; color: #2354bd; font-size: 30px;">Nuestro</h2>
+
+					<h3 style="text-align: center; margin-top: -30px; color: #25238f; font-size: 25px;">Equipo </h3>
+				</div>
+				<div class="imagen-container">
+					<div>
+						<!--Estilo en linea --> 
+						<img src="assets/img/equipo-medico.jpg" alt="equipo-medico" title="Equipo medico de trabajo" style="max-width: 100%; height: auto;">
+						
+					</div>
+				</div>
+			</div>
+			
+			
+
+            <div id="DivIframe">
+				<!--Estilo en linea --> 
+				<p style=" font-size: 35px; text-align: center;">🗺️ Ubicación</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.858923931816!2d-79.90541022958733!3d-2.2069347323788495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6e15b0a9db4d%3A0x48055c9b43992e08!2sREDIMA!5e0!3m2!1ses-419!2sec!4v1698237863454!5m2!1ses-419!2sec" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">        
+                </iframe>
+            </div>
+
+         </section>		
+		 <section class="image-section">
+			<h2>Enlaces de contacto</h2>
+			<div class="image-container">
+				<div class="image-item">
+					<a href=""><img src="assets/img/whatsapp1.png" alt="imagen-whatsapp" title=" whatsapp"><p class="descripcion">0967894587</p></a>										
+				</div>
+				<div class="image-item">
+					<a href=""><img src="assets/img/correo1.png" alt="Imagen-correo" title="correo"><p class="descripcion">Centrofeliz@hotmail.com</p></a>					
+				</div>
+				<div class="image-item">
+					<a href=""><img src="assets/img/facebook1.png" alt="Imagen-facebook" title="facebook"><p>Tu consultorio</p></a>					
+				</div>				
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="contenedor">
+				<h2>Oferta Especial: Descuento en Cirugía</h2>
+				<p>Aprovecha nuestra oferta especial por tiempo limitado en cirugía para pacientes elegibles.</p>
+				
+				<div class="descuento-cirugia">
+					<h3>Descuento del 15% en Cirugía</h3>
+					<p>¡No te pierdas nuestra promoción exclusiva! Obtén un descuento del 15% en cualquier cirugía programada durante este mes. </p>
+					<p> Esta es una oportunidad única para mejorar tu salud a un precio reducido.</p>
+				</div>
+				
+				<div class="requisitos">
+					<h3>Requisitos para la Oferta</h3>
+					<ul>
+						<li>Programar la cirugía antes de la fecha de vencimiento de la oferta.</li>
+						<li>Revisión médica para determinar la elegibilidad del paciente.</li>
+						<li>Mencionar el código de promoción: CIRUGIA15 al hacer la reserva.</li>
+					</ul>
+				</div>
+				
+				<div class="vigencia">
+					<h3>Vigencia de la Oferta</h3>
+					<p>Esta oferta especial es válida hasta el final de este mes. ¡No dejes pasar esta oportunidad y mejora tu calidad de vida con nosotros!</p>
+				</div>
+			</div>
+		</section>
+		<p class="nota">Esta pagina fue creada por Viter Jostin</p>
+	</main>
+
+	<footer class="pie_de_pagina">
+		<h2>Desarrollado por grupo 6</h2>
+		<ul>
+			<li>Altamirano Daniel</li>
+			<li>Alcivar Jeremy</li>
+			<li>Espinoza Lara Jimmy Andrés</li>
+			<li>Guamán Avalos Andrew Juliano</li>
+			<li>Gutiérrez Suárez Ronald Joseph</li>
+			<li>Viter Tejada Jostin Emilio</li>
+		</ul>
+		
+	</footer>
+</body>
+</html>

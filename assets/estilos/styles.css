@@ -1,0 +1,73 @@
+/* SELECTOR GLOBAL */
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Seleccion del body */
+body{
+    margin: 0 2%;
+}
+
+/* Titulo */
+h1 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+
+/* Menu de inicio */
+.menu {
+    background-color: #e0dfdfad;
+    text-align: center;
+}
+
+/* UL dentro del menu */
+.menu ul{
+    list-style: none;
+    padding: 15px;
+}
+
+/* Listas dentro del menu */
+.menu li {
+    display: inline;
+    margin: 47px;
+}
+
+/* Enlaces, especificamente los que estan dentro de "menu" */
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3px 15px;
+}
+
+/* Cambia de color al pasar el mouse por encima */
+.menu a:hover{
+    background-color: #61053e;
+    color: white;
+    transition: color 0.2s;
+}
+
+
+/* PIE DE PAGINA */
+.pie_de_pagina {
+    margin-top: 50px;
+    background-color: #333;
+    color: #eaeaea9d;
+    padding: 20px;
+    text-align: center;
+}
+
+.nota{
+    background-color: #f0f0f0; 
+    color: #333; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    font-size: 18px; 
+    text-align: center;	
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Daniel Altamirano"/>
+	<title>Consultorio Medico</title>
+    <!-- <link rel="stylesheet" href="/estilos/styles.css"> -->
+	<link rel="stylesheet" href="assets/estilos/styles.css">
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+	<!-- Estilos dentro del documento HTML -->
+	<style>
+
+		.seccion{
+			background-color: #f1f1f1;
+			margin-bottom: 50px;	
+		}
+
+		.contenedor-nivel-1{
+			display: flex; 
+			align-items: center;
+		}
+
+		.parrafo-principal{
+			font-size: 20px; 
+			color: gray;	
+		}		
+
+		/* Estilos para el formulario */
+		.seccion-formulario{
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		.seccion-formulario h2{
+			font-size: 24px;
+			margin-bottom: 10px;
+			margin-left: 10px;
+		}
+
+		form {
+			max-width: 400px;
+			margin: 0 auto;
+		}
+
+		label{
+			display: block;
+			font-weight: bold;
+			margin-top: 10px;
+		}
+
+		input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+		
+
+	</style>
+
+</head>
+<body>
+	<header class="titulo_pagina">
+		<h1>Consultorio Medico - Grupo 6</h1>
+	</header>
+	<nav class="menu">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="pacientes.html">Pacientes</a></li>
+			<li><a href="especialistas.html">Especialistas</a></li>
+			<li><a href="consultas.html">Consultas</a></li>
+			<li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+			<li><a href="contactanos.html">Contactanos</a></li>
+		</ul>
+	</nav>	
+
+	<main>
+		<!-- Seccion de informacion basica -->
+		<section class="seccion">
+			<div class="contenedor-nivel-1">
+				<img style="width: 42%; padding: 10px;" src="assets/img/consultorio.jpg" alt="Imagen no cargada">
+				<div style="width: 50%; padding: 10px;">
+					<h2 style="margin-bottom: 10px; font-size: 22px;" >Informacion Basica</h2>
+					<p class="parrafo-principal">Con mas de 10 años de experiencia en el mercado la cual nos permite realizar las mejores recomendaciones para sus implementaciones de presencia web, conocemos el modelo y comportamiento de los usuarios y pacientes a nivel nacional, permitiéndonos desarrollar estrategias a medida de la especialidad y el geoposicionamiento. Contamos con médicos y servicios de la salud afines; aseguramos alta disponibilidad y posicionamiento en redes de búsqueda.</p>	
+				</div>						
+			</div>
+		</section>
+
+		<!-- Seccion 2 - Objetivo -->
+		<section class="seccion">
+			<div class="contenedor-nivel-1">
+				<img style="width: 400px; height: 400px; padding: 10px;" src="assets/img/consultorio2.jpg" alt="Imagen no cargada">
+				<div style="width: 50%; padding: 10px;">
+					<h2 style="margin-bottom: 10px; font-size: 22px;" >Objetivo</h2>
+					<p class="parrafo-principal">Esta Institución que ejerce plenamente la gobernanza del Sistema Nacional de Salud, con un modelo referencial en Latinoamérica que priorice la promoción de la salud y la prevención de enfermedades, con altos niveles de atención de calidad con calidez, garantizando la salud integral de la población y el acceso universal a una red de servicios, con la participación coordinada de organizaciones públicas, privadas y de la comunidad.</p>	
+				</div>						
+			</div>
+		</section>
+
+		<!-- Seccion de formulario -->
+		<section class="seccion" id="seccion-formulario">
+			<h2 style="margin-bottom: 10px; margin-left: 10px; font-size: 22px;">Informacion Personal</h2>
+			<form method="post">
+				<label for="nombre">Nombre</label>
+				<input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+				<label for="correo">Correo</label>
+				<input type="email" name="correo" id="correo" placeholder="Ingrese su correo" required>
+				<label for="mensaje">Mensaje</label>
+				<textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje" required></textarea>
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+		
+		<section>
+			<p class="nota">Esta pagina fue creada por Altamirano Daniel</p>
+		</section>
+	</main>
+
+	<footer class="pie_de_pagina">
+		<h3>Desarrollado por grupo 6</h3>
+		<p>Altamirano Daniel</p>
+		<p>Alcivar Jeremy</p>
+		<p>Espinoza Lara Jimmy Andrés</p>
+		<p>Guamán Avalos Andrew Juliano</p>
+		<p>Gutiérrez Suárez Ronald Joseph</p>
+		<p>Viter Tejada Jostin Emilio</p>
+	</footer>
+</body>
+</html>

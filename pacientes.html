@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Alcivar Sala Jeremy Josue">
+	<title>Consultorio Medico</title>
+	<link rel="stylesheet" href="assets/estilos/styles.css">
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+	<style>
+
+		.boton_informacion{
+			background-color: #BABABA; 
+	      	color: #000000; 
+	      	padding: 10px 20px; 
+	      	border: none; 
+	      	border-radius: 5px; 
+	      	cursor: pointer;
+	      	margin-bottom: 20px;
+		}
+		.boton_informacion:hover{
+			/* background-color: #828282; */
+			background-color: #61053e;
+			color: white;
+		    transition: color 0.3s;
+		}
+
+		.seccion{
+			display: flex;
+			margin-bottom: 20px;
+		 	padding: 20px;
+		 	background-color: #E9E9E9;
+	      	border-radius: 10px;
+	      	text-align: center;
+		}
+
+		div img{
+			width: 650px;
+			height: 350px;
+			border: none;
+			border-radius: 10px;
+		}
+
+
+		.parrafo{
+			margin: 0px 20px;
+			font-size: 18px;
+			text-align: left;
+			color: gray;
+		}
+
+		div h3{
+			text-align: center;
+			font-size: 25px;
+		}
+
+
+		#lista{
+			font-size: 18px;
+			text-align: justify;
+			color: gray;
+		}
+
+
+	</style>
+</head>
+
+<body>
+	<header class="titulo_pagina">
+		<h1>Consultorio Medico - Grupo 6</h1>
+	</header>
+	<nav class="menu">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="pacientes.html">Pacientes</a></li>
+			<li><a href="especialistas.html">Especialistas</a></li>
+			<li><a href="consultas.html">Consultas</a></li>
+			<li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+			<li><a href="contactanos.html">Contactanos</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<section>
+			<div>
+				<h2 style="font-family: 'Times new roman', sans-serif ; text-align: center; font-weight: bold; background-color: #E9E9E9; border-radius: 10px; ">NOTICIAS Y ACTUALIZACIONES</h2>
+			</div>
+			
+			<div>				
+				<article class="seccion">
+					<div class ="division">
+						<h3>Temas de Salud</h3>
+						<p class="parrafo">La salud es un bien preciado que influye de manera significativa en la calidad de vida de cada individuo. Desde la prevención de enfermedades hasta la atención médica adecuada, la salud abarca una amplia gama de temas que impactan a personas de todas las edades y comunidades alrededor del mundo. Por eso te traemos temas realacionados sobre:</p>
+
+						<ul id="lista">
+								<li>Determinantes sociales de la salud.</li>
+								<li>Diabetes.</li>
+								<li>Difteria.</li>
+								<li>Discapacidad.</li>
+								<li>Dispositivos médicos.</li>
+								<li>Diversidad Cultural y Salud.</li>
+						</ul>
+						<br>
+						<button class="boton_informacion">Mas Información</button>
+					</div>
+					<div class="estilo_img1">
+						<img src="assets/Img/TemasSalud.jpg" alt="Temas de Salud">
+					</div>										
+				</article>
+
+				<article class="seccion">					
+					<div class="estilo_img2">
+						<img src="assets/Img/PruebasM.jpg" alt="Pruebas Medicas">
+					</div>
+					<div class="division">
+						<h3>Pruebas Medicas</h3>
+						<p class="parrafo">Las pruebas médicas desempeñan un papel esencial en el cuidado de la salud y el diagnóstico de enfermedades. Estas evaluaciones clínicas, que van desde análisis de sangre y radiografías hasta pruebas genéticas avanzadas, proporcionan a los profesionales de la salud información vital para comprender la condición de un paciente y tomar decisiones informadas sobre su tratamiento.
+						</p>
+						<br>
+						<button class="boton_informacion">Mas Información</button>
+					</div>					
+				</article>
+
+				<article class="seccion">
+					<div class="division">
+						<h3>Recetas Saludables</h3>
+						<p class="parrafo">Ofrecer una amplia variedad de recetas saludables que no solo satisfacen tu paladar, sino que también cuidan de tu bienestar es parte de neuestro servicio. Creemos que una alimentación equilibrada es esencial para una vida plena y activa.<br> Nuestras recetas están cuidadosamente seleccionadas para incluir ingredientes nutritivos y deliciosos, desde ensaladas frescas y batidos energéticos hasta platos principales bajos en calorías y postres saludables.
+						</p>
+						<br>
+						<button class="boton_informacion">Mas Información</button>
+					</div>
+					<div class="estilo_img3">
+						<img src="assets/Img/RecetasS.jpg" alt="Recetas Saludables">
+					</div>
+				</article>				
+			</div>
+		</section>
+		<p class="nota">Esta pagina fue creada por Alcivar Jeremy</p>
+	</main>
+
+	<footer class="pie_de_pagina">
+		<h3>Desarrollado por grupo 6</h3>
+		<p>Altamirano Daniel</p>
+		<p>Alcivar Jeremy</p>
+		<p>Espinoza Lara Jimmy Andrés</p>
+		<p>Guamán Avalos Andrew Juliano</p>
+		<p>Gutiérrez Suárez Ronald Joseph</p>
+		<p>Viter Tejada Jostin Emilio</p>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Andrew Guamán"/>
+	<title>Consultorio Medico</title>
+    <link rel="stylesheet" href="assets/estilos/styles.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <style>
+        
+        .servicios{
+            display: flex; /*alinear elementos en línea*/
+            background-color: #e0dfdfad; /*color fondo contenedor imagen*/
+            align-items: center; /*alinear verticalmente*/
+            padding: 10px; /*espacio entre el contenido y el borde del contenedor*/
+            margin-bottom: 20px; /*espacio entre secciones*/
+        }
+
+        .servicios img {
+            width: 700px; /*tamaño imagen*/
+            height: auto; /*Altura imagen*/
+            margin: 10px; /*Espacio entre la imagen y el texto */
+            border-radius: 10px;
+        }
+
+        .servicios button { /*boton*/
+            margin-left: 200px;
+            width: 200px;
+            height: 60px;
+            font-size: 16px;
+            background-color: rgb(134, 207, 255);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .izquierda img {
+            margin-right: 30px;            
+        }
+
+        .derecha img{
+            margin-left: 30px;
+        }
+        
+        p{
+            font-size: 20px; /*tamaño texto*/
+            color: gray;
+            margin-left: 30px;
+        }
+
+        .lista-consultas{
+            font-size: 20px; /*tamaño texto*/
+            color: rgb(167, 167, 167); /*color texto*/
+            margin-left: 30px;
+        }
+
+        li{
+            font-size: 20px; /*tamaño texto*/
+            color: gray;
+        }
+
+        h2{
+            margin-left: 30px;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+	<header class="titulo_pagina">
+		<h1>Consultorio Medico - Grupo 6</h1>
+	</header>
+	<nav class="menu">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="pacientes.html">Pacientes</a></li>
+			<li><a href="especialistas.html">Especialistas</a></li>
+			<li><a href="consultas.html">Consultas</a></li>
+			<li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+			<li><a href="contactanos.html">Contactanos</a></li>
+		</ul>
+	</nav>	
+
+	<main>
+
+		<div class="servicios izquierda">
+            <img src="assets/img/servicios.jpg" alt="Imagen de pacientes">
+			    <div>
+                <h2>Servicios Médicos</h2>
+			    <p>Nuestro consultorio médico se especializa en brindar servicios de atención médica de alta calidad a pacientes de todas las edades. Estamos comprometidos en ser tu punto de referencia para la atención médica confiable y compasiva. En nuestro consultorio, encontrarás una variedad de servicios médicos, desde consultas generales hasta atención especializada en diversas áreas de la medicina. Nuestro equipo de profesionales de la salud altamente calificados está dedicado a tu bienestar y salud.</p>
+                <p>Ofrecemos una amplia gama de servicios médicos, que incluyen:</p>
+			    <ul class="lista-consultas">
+				    <li>Consultas médicas generales</li>
+				    <li>Exámenes físicos</li>
+				    <li>Atención especializada</li>
+				    <li>Consulta pediátrica</li>
+				    <li>Ginecología</li>
+			    </ul>
+                </div>
+        </div>	
+
+        <div class="servicios derecha">  
+            <div>  
+                <h2>Consultas</h2>
+			    <p>Nos dedicamos a brindarte una atención médica personalizada y de calidad. Entendemos que tu salud es una prioridad, y estamos aquí para responder a tus preguntas y preocupaciones médicas. Ya sea que necesites una consulta médica general, una evaluación de una afección específica o asesoramiento sobre tu salud en general, nuestro equipo de profesionales de la salud está dispuesto a ayudarte.<br> Nuestros servicios se atienden virtualmente o en nuestros locales.</p>
+			    <p>Horarios de atención:</p>
+			    <ul class="lista-consultas">
+				    <li>Lunes:   09:00 AM - 16:00 PM</li>
+				    <li>Martes:  09:00 AM - 15:00 PM</li>
+				    <li>Viernes: 09:00 AM - 18:00 PM</li>
+			    </ul>
+            </div>
+            <img src="assets/img/consulta.jpg" alt="Imagen de consulta">
+        </div>
+
+        <div class="servicios izquierda">
+            <img src="assets/img/citas.jpg" alt="Atencion virtual">
+            <div>
+			<h2>Reserve su Cita</h2>
+			<p>En nuestro consultorio médico, hemos simplificado el proceso de programar tu cita médica. Entendemos que tu tiempo es valioso y que la conveniencia es clave. Por eso, ofrecemos dos opciones para reservar tu cita: de manera virtual o a través de nuestros contactos directos.<br>Puede reservar su cita virtualmente o en nuestros contactos.</p>
+			<button style="background-color: #61053e">RESERVAR CITA</button>
+            </div>
+        </div>
+			
+        <div class="servicios derecha">  
+            <div>
+			<h2>Contactos</h2>
+            <p> Te proporcionamos los medios de contacto para que puedas comunicarte con nosotros de manera directa y efectiva. Valoramos tu comunicación y estamos aquí para responder a tus preguntas, inquietudes y necesidades de atención médica.</p>
+			<p>Puede contactarnos en:</p>
+			<address>
+				<p>Dirección: Puente Altamirano</p>
+				<p>Teléfono: (+52) 237-78 231</p>
+				<p>Email: info@consultoriomedico.com</p>
+			</address>
+            </div>
+            <img src="assets/img/atencion.jpg" alt="Contactos">            
+        </div>
+        <p class="nota">Esta pagina fue creada por Andrew</p>
+	</main>
+
+	<footer class="pie_de_pagina">        
+		<h3>Desarrollado por grupo 6</h3>
+		<p>Altamirano Daniel</p>
+		<p>Alcivar Jeremy</p>
+		<p>Espinoza Lara Jimmy Andrés</p>
+		<p>Guamán Avalos Andrew Juliano</p>
+		<p>Gutiérrez Suárez Ronald Joseph</p>
+		<p>Viter Tejada Jostin Emilio</p>
+	</footer>
+</body>
+</html>

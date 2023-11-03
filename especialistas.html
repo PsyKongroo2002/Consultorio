@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Jimmy Espinoza">
+	<title>Consultorio Medico</title>
+    <link rel="stylesheet" href="assets/estilos/styles.css">
+	<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+	<style>
+
+		/*Selector por elemento*/
+		h3{
+			color: white;
+		}
+
+		p.politicas{
+			color: white;
+		}
+
+		/*Selector combinador*/
+		section h3{
+			font-style: italic;
+		}
+
+		/*Selector pseudoclases*/
+		.Especialistas_1 :hover{
+			color: #66a4f2;
+		}
+
+		.Especialistas_2 :hover{
+			color: #66a4f2;
+		}
+
+		/*Selecotr pseudo-elementos*/
+		h2 ::first-letter{
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		}
+
+		/*Selector por atributo*/
+		p [class="politica"]{
+			font-style: italic;
+		}
+
+		/*Selector por agrupación*/
+		.Urología, .Cardiología, .Odontología{
+			display: inline-block;
+			margin-right: 100px;
+		}
+
+		.Otorrinolaringología{
+			display: inline-block;
+		}
+
+		/*Selector por clase*/
+		.Oftalmología{
+			display: inline-block;
+			margin-top: 60px;
+			margin-right: 70px;
+		}
+
+		.Optometría, .Pediatría{	
+			display: inline-block;	
+			margin-right: 100px;
+		}
+
+		.Psiquiatría{
+			display: inline-block;
+		}
+
+		/*Selector por ID*/
+		#primer_titulo{
+			text-align: center;
+			font-family: Arial, Helvetica, sans-serif
+		}
+
+		.Especialistas_1{
+			text-align: center;
+		}
+
+		.Especialistas_2{
+			text-align: center;
+			margin-bottom: 60px;
+		}
+
+		.Recomendaciones{
+			text-align: center;
+			background-color: #66a4f2;
+			padding: 10px;
+		}
+
+		.Consultorio{
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<header class="titulo_pagina">
+		<h1>Consultorio Medico - Grupo 6</h1>
+	</header>
+	<nav class="menu">
+		<ul>
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="pacientes.html">Pacientes</a></li>
+			<li><a href="especialistas.html">Especialistas</a></li>
+			<li><a href="consultas.html">Consultas</a></li>
+			<li><a href="preguntas.html">Preguntas Frecuentes</a></li>
+			<li><a href="contactanos.html">Contactanos</a></li>
+		</ul>
+	</nav>	
+
+	<main>
+
+		<section class="Grupo_Especialidades">
+			<div>
+				<h2 id="primer_titulo">Conoce a nuestros especialistas</h2>
+			</div>		
+
+				<div class="Especialistas_1">
+					<div class="Urología">
+						<p>Dr. Julio Pacheco</p>
+						<p>Urología</p>
+						<img src="assets/img/Urología.svg" alt="Imagen-Urología" title="riñones" class="iconos" width="80">
+					</div>
+					<div class="Cardiología">
+						<p>Dr. Carlos Flores</p>
+						<p>Cardiología</p>
+						<img src="assets/img/Cardiología.svg" alt="Imagen-Cardiología" title="corazon" class="iconos" width="70">
+					</div>
+					<div class="Odontología">
+						<p>Dr. Cristian Arias</p>
+						<p>Odontología</p>
+						<img src="assets/img/Odontología.svg" alt="Imagen-Odontología" title="dientes" class="iconos" width="60">
+					</div>
+					<div class="Otorrinolaringología">
+						<p>Dr. Roberto Peralta</p>
+						<p>Otorrinolaringología</p>
+						<img src="assets/img/Otorrinolaringología.svg" alt="Imagen-Otorrinolaringología" title="oido" class="iconos" width="49">
+					</div>
+				</div>
+
+				<div class="Especialistas_2">
+					<div class="Oftalmología">
+						<p>Dr. Marcos Sotomayor</p>
+						<p>Oftalmología</p>
+						<img src="assets/img/Oftalmología.svg" alt="Imagen-Oftalmología" title="ojo" class="iconos" width="80">
+					</div>
+					<div class="Optometría">
+						<p>Dr. Cesar Robles</p>
+						<p>Optometría</p>
+						<img src="assets/img/Optometría.svg" alt="Imagen-Optometría" title="optometría" class="iconos" width="80">
+					</div>
+					<div class="Pediatría">
+						<p>Dr. Eduardo Cedeño</p>
+						<p>Pediatría</p>
+						<img src="assets/img/Pediatría.svg" alt="Imagen-Pediatría" title="pediatría" class="iconos" width="70">
+					</div>
+					<div class="Psiquiatría">
+						<p>Dra. Mónica Muñoz</p>
+						<p>Psiquiatría</p>
+						<img src="assets/img/Psiquiatría.svg" alt="Imagen-Psiquiatría" title="psiquiatría" class="iconos" width="65">
+					</div>
+				</div>
+			
+		</section>
+			
+		<section class="Recomendaciones">
+			<h3 style="font-family: Arial, Helvetica, sans-serif;">Confia en nuestro grupo de trabajo</h3>
+			<p class="politicas">En nuestro centro médico, contamos con un equipo de destacados expertos en diferentes ramas de la atención médica.</p>
+			<p class="politicas">Nuestra misión es proporcionar atención integral de salud a todas las personas, sin importar sus diferencias, con un enfoque cálido, de alta calidad y seguro.</p>
+		</section>
+
+		<section class="Consultorio">
+			<!-- Estilo en linea -->
+			<h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif;" >Te esperamos</h4>
+			<!-- La imagen cambiara si la ventana no cumple con el tamaño adecuado -->
+			<picture>
+				<source media="(min-width:800px)" srcset="assets/img/consultorio.webp">
+				<img src="assets/img/atencion_medica.webp" alt="atecion-excelente" style="width:auto;">
+			  </picture>
+		</section>
+		<p class="nota">Esta pagina fue creada por Espinoza Jimmy</p>
+	</main>
+
+	<footer class="pie_de_pagina">
+		<h3>Desarrollado por grupo 6</h3>
+		<p>Altamirano Daniel</p>
+		<p>Alcivar Jeremy</p>
+		<p>Espinoza Lara Jimmy Andrés</p>
+		<p>Guamán Avalos Andrew Juliano</p>
+		<p>Gutiérrez Suárez Ronald Joseph</p>
+		<p>Viter Tejada Jostin Emilio</p>
+	</footer>
+</body>
+</html>
